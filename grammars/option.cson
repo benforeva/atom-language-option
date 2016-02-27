@@ -1,0 +1,49 @@
+scopeName: 'source.option'
+name: 'Option'
+fileTypes: ['dn', 'on']
+
+patterns: [
+  {
+    name: 'constant.numeric.option'
+    match: '\\b[-]?[0-9]+\\b'
+  }
+  {
+    name: 'entity.other.option'
+    match: '\\b([A-Z][a-z]+[\/]?)+\\b'
+  }
+  {
+    name: 'keyword.operator.option'
+    match: '(\\b[_][\\w]+\\b)|\\b[_]\\b'
+  }
+  {
+    name: 'variable.option'
+    match: '\\b([\\w]+|\/)+'
+  }
+  {
+    match: '(&)([\\w]+)'
+    captures:
+      1:
+        name: 'comment.line'
+      2:
+        name: 'entity.name.function.option'    
+  }
+  {
+    name: 'keyword.control.option'
+    match: '&'
+  }
+  {
+    name: 'comment.block'
+    begin: '["]'
+    beginCaptures:
+      0:
+        name: 'comment.line'
+    end: '[""]'
+    endCaptures:
+      0:
+        name: 'comment.line'
+  }
+  {
+    name: 'comment.line'
+    match: '[}]|[{]|[,]'
+  }
+]
