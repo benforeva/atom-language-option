@@ -1,7 +1,7 @@
 {
   "name": "language-option",
   "version": "0.0.0",
-  "description": "Syntax (and possibly semantic) highlighting for the Option language",
+  "description": "Syntax highlighting for the Option language",
   "engines": {
     "atom": "*"
   },
