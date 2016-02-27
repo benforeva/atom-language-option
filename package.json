@@ -1,0 +1,17 @@
+{
+  "name": "language-option",
+  "version": "0.0.0",
+  "description": "Syntax (and possibly semantic) highlighting for the Option language",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benforeva/atom-language-option.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benforeva/atom-language-option/issues"
+  },
+  "license": "MIT"
+}
