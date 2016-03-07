@@ -13,7 +13,7 @@ patterns: [
   }
   {
     name: 'keyword.operator.option'
-    match: '(\\b[_][\\w]+\\b)|\\b[_]\\b'
+    match: '(\\b[_][\\w|/]+\\b)|\\b[_]\\b'
   }
   {
     name: 'variable.option'
@@ -25,7 +25,7 @@ patterns: [
       1:
         name: 'comment.line'
       2:
-        name: 'entity.name.function.option'    
+        name: 'entity.name.function.option'
   }
   {
     name: 'keyword.control.option'
